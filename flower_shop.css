@@ -1,0 +1,149 @@
+/* Shared Styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  font-variation-settings: 100;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-color-primary {
+    color: #E95A08;
+}
+
+
+/* Header Styles - Navbar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+.brand-logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+.brand-logo:hover {
+    transform: scale(1.15); 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-items, .nav-items-cart {
+    list-style: none;
+    padding: 3px 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-bar-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.cart-icon {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+
+/* Header Styles - Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0px auto;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.banner-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.banner-title {
+    font-family: "Noto Serif", serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.banner-description {
+    font-family: "Inter", sans-serif;
+    color: #0000007e;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.banner-image {
+    width: 50%;
+}
+
+
+/* Main Styles - Our Plants Section */
+
+
+/* Main Styles - Navbar Section */
+/* Main Styles - Navbar Section */
+/* Main Styles - Navbar Section */
+/* Main Styles - Navbar Section */
+
+
+
+/* Footer Styles - ___ Section */
+
+
+/* CSS for Mobile Device (Width <= 576px) */
+@media screen and (max-width: 576px) {
+    .nav-items {
+        display: none;
+    }
+    
+    
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .banner-details {
+        width: 90%;
+    }
+    .banner-image {
+        width: 90%;
+    }
+    
+}
+
+
+/* CSS for Tablet Device (Width >= 576px and Width <= 900px) */
+@media screen and (min-width: 577px) and (max-width: 900px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+
+    
+}
