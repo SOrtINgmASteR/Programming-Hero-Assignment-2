@@ -46,16 +46,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    gap: 10px;
 }
 
 .nav-items, .nav-items-cart {
     list-style: none;
-    padding: 3px 5px;
+    padding: 5px 5px;
 }
 
 .nav-link {
     text-decoration: none;
+    color: #727272;
+}
+
+#home {
+    font-weight: 500;
+    color: black;
 }
 
 .nav-bar-cart {
@@ -146,7 +152,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(255, 237, 228);
+    /* background-color: rgb(255, 237, 228); */
     padding: 10px 10px;
 }
 
@@ -399,9 +405,62 @@
 }
 
 
-/* Footer Styles - ___ Section */
+/* Footer Styles */
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1140px;
+    margin: 0px auto;
+}
 
+.logo-details {
+    max-width: 400px;
+    margin: 0px auto;
+}
 
+.brand-details {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #727272;
+    font-size: 1.3rem;
+    margin: 0px auto;
+}
+
+.footer-links {
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+.footer-link-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (5, 1fr);
+}
+
+.footer-link-item {
+    list-style: none;
+    padding: 10px 5px;
+    margin: 10px 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #727272;
+    font-size: 1rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+.social-icon {
+
+}
 /* CSS for Mobile Device (Width <= 570px) */
 @media screen and (max-width: 570px) {
     .nav-items {
@@ -474,7 +533,26 @@
         font-size: 1rem;
         padding: 12px 15px;
     }
-
+    
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-link-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-links {
+        max-width: 400px;
+        margin: 0px 0px;
+    }
+    .footer-link-item {
+        padding: 10px 0px;
+        margin: 0px;
+    }
+    .social-media {
+        margin: 5px 15px;
+        padding: 0px 20px;
+    }
 }
 
 
@@ -529,5 +607,14 @@
         width: auto;
         font-size: 1rem;
         padding: 12px 15px;
+    }
+     
+    .footer-link-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-links {
+        max-width: 400px;
+        margin: 0px 0px;
     }
 }
