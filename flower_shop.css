@@ -248,6 +248,7 @@
 .latest-deal-header {
     max-width: 750px;
     margin: 0px auto;
+    padding: 10px 5px;
 }
 
 .latest-deal-title {
@@ -269,49 +270,69 @@
 
 .poster-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
-    width: 100%;
     margin: 0px auto;
-    margin-top: 100px;
+    width: 100%;
+    padding: 5px 10px;
 }
 
-.posters {
+.poster {
+    position: relative;
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .posters-1 {
     background-image: url("B12A02-Responsive-Flowers-main/assets/deal-bloom.png");
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
-
 .posters-2 {
     background-image: url("B12A02-Responsive-Flowers-main/assets/deal-ana.png");
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
-
 .posters-3 {
     background-image: url("B12A02-Responsive-Flowers-main/assets/deal-zabo.png");
-    
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+
+.poster-overlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.poster-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
 }
 
 .poster-title {
     font-family: "Noto Serif", serif;
-    text-align: center;
-    font-weight: 600;
-    font-size: auto;
-    color: white;
-    margin: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .shop-now {
     font-family: "Inter", sans-serif;
-    text-align: center;
-    font-weight: 600;
-    font-size: auto;
-    color: white;
-    margin: 5px;
+    font-weight: 500;
     text-decoration: underline;
+    font-size: 1rem;
 }
 
 /* Main Styles - Navbar Section */
@@ -357,6 +378,15 @@
         margin: 0px, auto;
     }
 
+    .poster-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .posters-1, .posters-2, .posters-3 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
 }
 
 
@@ -388,5 +418,9 @@
     .plants-lover-details {
         width: 90%;
         margin: 0px, auto;
+    }
+    .posters-1, .posters-2, .posters-3 {
+        grid-column: auto;
+        grid-row: auto;
     }
 }
