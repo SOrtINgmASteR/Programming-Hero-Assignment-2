@@ -37,6 +37,7 @@
 }
 
 .brand-logo:hover {
+    cursor: pointer;
     transform: scale(1.15); 
 }
 
@@ -167,11 +168,11 @@
 }
 
 .add-to-cart {
+    font-family: "Inter", sans-serif;
     color: white;
-    font-size: 1.25rem;
-    font-weight: 600;
-    padding: 5px 10px;
-    margin: 5px auto;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 10px 15px;
     background-color: #E95A08;
     border: 1px solid #E95A08;
     width: 100%;
@@ -184,8 +185,135 @@
     transform: translateY(-3px); 
     box-shadow: 0 8px 16px rgba(236, 165, 98, 0.15);
 }
-/* Main Styles - Navbar Section */
-/* Main Styles - Navbar Section */
+/* Main Styles - Plants Lover Section */
+.plants-lover {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-top: 200px;
+    gap: 40px;
+}
+
+.plants-lover-images {
+    width: 55%;
+    /* border: 1px solid #E95A08; */
+    display: flex;
+    margin: 0px 20px; 
+}
+
+.plants-lover-image {
+    border-radius: 5px;
+}
+
+.badge-logo {
+    max-width: 250px;
+    max-height: 250px;
+    margin-left: -100px;
+    margin-top: -120px; 
+}
+
+.plants-lover-details {
+    width: 45%;
+    margin: 0px, auto;
+}
+
+.plants-lover-details-title {
+    font-family: "Noto Serif", serif;
+    font-weight: 800;
+    font-size: 3.2rem;
+}
+
+.plants-lover-details-container {
+    padding: 0px 15px;
+}
+
+.plants-lover-detail {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #0000007e;
+    padding: 10px 5px;
+    margin: 5px, 5px;
+}
+
+
+/* Main Styles - Latest Deal Section */
+.latest-deal {
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.latest-deal-header {
+    max-width: 750px;
+    margin: 0px auto;
+}
+
+.latest-deal-title {
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.latest-deal-description {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+    margin: 0px;
+}
+
+.poster-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.posters {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.posters-1 {
+    background-image: url("B12A02-Responsive-Flowers-main/assets/deal-bloom.png");
+}
+
+.posters-2 {
+    background-image: url("B12A02-Responsive-Flowers-main/assets/deal-ana.png");
+}
+
+.posters-3 {
+    background-image: url("B12A02-Responsive-Flowers-main/assets/deal-zabo.png");
+    
+}
+
+.poster-title {
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: auto;
+    color: white;
+    margin: 5px;
+}
+
+.shop-now {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: auto;
+    color: white;
+    margin: 5px;
+    text-decoration: underline;
+}
+
 /* Main Styles - Navbar Section */
 /* Main Styles - Navbar Section */
 
@@ -215,6 +343,20 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
+    .plants-lover {
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 10px;
+    }
+    .badge-logo {
+        display: none; 
+    }
+    .plants-lover-details {
+        width: 90%;
+        margin: 0px, auto;
+    }
+
 }
 
 
@@ -231,5 +373,20 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
-    
+
+    .plants-lover {
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 10px;
+    }
+    .badge-logo {
+        max-width: 200px;
+        max-height: 200px;
+        margin-left: -70px;
+        margin-top: -90px; 
+    }
+    .plants-lover-details {
+        width: 90%;
+        margin: 0px, auto;
+    }
 }
